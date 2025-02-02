@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable</h1>
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Subject</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="form-container">
+            <input type="text" id="day" placeholder="Enter Day">
+            <input type="text" id="time" placeholder="Enter Time">
+            <input type="text" id="subject" placeholder="Enter Subject">
+            <button onclick="addRow()">Add Entry</button>
+        </div>
+        <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <!-- FIX: Load jsPDF Core Library First -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="sttyle.js" > </script>
+        
+</body>
+</html>
